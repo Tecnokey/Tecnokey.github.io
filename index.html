@@ -6,7 +6,6 @@
     <title>Tecnokey | Cerrajería Automotriz y Electromecánica</title>
     <meta name="description" content="Cerrajería especializada exclusivamente en vehículos y motocicletas. Aperturas, copias de llaves, transponders y diagnóstico electromecánico avanzado.">
     
-    <!-- Tailwind CSS for mobile-first styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -16,13 +15,13 @@
                         brand: {
                             50: '#f0f9ff',
                             100: '#e0f2fe',
-                            500: '#0ea5e9', // Light blue
-                            600: '#0284c7', // Primary Brand Blue
+                            500: '#0ea5e9',
+                            600: '#0284c7',
                             800: '#075985',
                             900: '#0c4a6e',
                         },
                         accent: {
-                            500: '#f59e0b', // Amber/Orange for Call to Action
+                            500: '#f59e0b',
                             600: '#d97706',
                         }
                     },
@@ -34,17 +33,14 @@
         }
     </script>
     
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
         body { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
         
-        /* Subtle pattern for background */
         .bg-pattern {
             background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230ea5e9' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
         }
@@ -52,16 +48,13 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
 
-    <!-- Header / Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <!-- Updated Custom Logo -->
             <a class="font-bold flex items-center text-xl sm:text-2xl" href="index.html">
                 <img src="favicon.ico" alt="Tecnokey Logo" class="m-1" style="height: 32px; width: 32px;" onerror="this.style.display='none'">
                 <span style="color: #4586A4;">Tecno</span><span style="color: #809A50;">k</span><span style="color: #CB2C52;">ey</span>
             </a>
             
-            <!-- Mobile/Desktop CTA -->
             <a href="https://wa.me/5493815052648" target="_blank" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold transition-colors text-sm md:text-base">
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
                 <span class="hidden sm:inline">WhatsApp</span>
@@ -69,9 +62,7 @@
         </div>
     </header>
 
-    <!-- Hero Section (Updated with Map Button) -->
     <section class="relative bg-brand-900 text-white">
-        <!-- Overlay background -->
         <div class="absolute inset-0 bg-black opacity-60"></div>
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center mix-blend-overlay"></div>
         
@@ -98,7 +89,6 @@
                 </a>
             </div>
 
-            <!-- New WhatsApp Reminder / Note -->
             <div class="mt-8 bg-black/40 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-2xl w-full flex items-start sm:items-center gap-3 text-left">
                 <div class="bg-accent-500/20 p-2 rounded-full flex-shrink-0 mt-0.5 sm:mt-0">
                     <i data-lucide="info" class="w-5 h-5 text-accent-500"></i>
@@ -115,7 +105,6 @@
         </div>
     </section>
 
-    <!-- Highlighted Electromechanics Section -->
     <section class="py-12 bg-accent-500 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-6">
@@ -132,7 +121,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="servicios" class="py-16 md:py-24 bg-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -142,12 +130,13 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Category 1 -->
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="car" class="w-6 h-6"></i>
+                    <div class="flex flex-row items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="car" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Aperturas y Emergencias</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Aperturas y Emergencias</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
@@ -176,12 +165,13 @@
                     </ul>
                 </div>
 
-                <!-- Category 2 -->
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="key" class="w-6 h-6"></i>
+                    <div class="flex flex-row items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="key" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Llaves y Mandos</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Llaves y Mandos</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
@@ -210,12 +200,13 @@
                     </ul>
                 </div>
 
-                <!-- Category 3 -->
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-gray-100 text-gray-700 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="settings" class="w-6 h-6"></i>
+                    <div class="flex flex-row items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-gray-100 text-gray-700 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="settings" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Cerraduras y Contacto</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Cerraduras y Contacto</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
@@ -231,7 +222,11 @@
                         </li>
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
-                            Hermanado de llaves
+                            Cambio de placas de tambor
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
+                            Cambio y reparación de motores
                         </li>
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
@@ -244,13 +239,11 @@
         </div>
     </section>
 
-    <!-- Call to Action Banner -->
     <section class="bg-brand-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
             <h2 class="text-3xl font-bold mb-4">¿Te quedaste afuera o el auto no arranca?</h2>
             <p class="text-brand-100 mb-6 max-w-2xl mx-auto">Llegamos rápido al lugar con las herramientas necesarias para solucionar tu problema sin dañar tu vehículo.</p>
             
-            <!-- Secondary Reminder in lower CTA -->
             <div class="bg-brand-900/50 rounded-lg px-4 py-3 mb-8 inline-block border border-brand-700">
                 <p class="text-sm sm:text-base text-brand-50">
                     <span class="text-accent-500 font-bold mr-1">¡Importante!</span>Al contactarnos, envíanos: el <strong>Problema</strong> y los <strong>datos</strong> de tu Vehículo (<strong>Marca</strong>, <strong>Modelo</strong> y <strong>Año</strong>).
@@ -270,10 +263,57 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="electronica" class="py-20 border-y border-gray-100 bg-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="w-full">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-600 text-sm font-semibold mb-6 border border-brand-100">
+                        <i data-lucide="microchip" class="w-4 h-4"></i>
+                        Laboratorio Técnico
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        Electrónica Avanzada <br>
+                        <span class="text-brand-600 font-light">y Diagnóstico Automotriz</span>
+                    </h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+                        Los vehículos modernos requieren más que herramientas tradicionales. Contamos con laboratorio propio para solucionar los problemas electrónicos más complejos del inmovilizador.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-50 flex items-center justify-center border border-brand-100">
+                                <i data-lucide="activity" class="w-6 h-6 text-brand-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900">Diagnóstico Computarizado</h4>
+                                <p class="text-sm text-gray-600 mt-1">Escaneo de todos los módulos del vehículo para detectar y borrar fallas.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-50 flex items-center justify-center border border-brand-100">
+                                <i data-lucide="zap" class="w-6 h-6 text-brand-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900">Módulos ECU, BSI y UCH</h4>
+                                <p class="text-sm text-gray-600 mt-1">Desinmovilización (IMMO OFF), clonación de computadoras de inyección y hermanado de módulos.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-50 flex items-center justify-center border border-brand-100">
+                                <i data-lucide="gauge" class="w-6 h-6 text-brand-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900">Reparación de Tableros</h4>
+                                <p class="text-sm text-gray-600 mt-1">Solución a fallas de tableros, pantallas LCD, agujas caídas e iluminación interior.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
     <footer class="bg-gray-900 text-gray-300 py-12 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Updated Brand Info -->
             <div>
                 <div class="flex items-center gap-2 mb-4">
                     <img src="favicon.ico" alt="Tecnokey Logo" style="height: 24px; width: 24px;" onerror="this.style.display='none'">
@@ -286,7 +326,6 @@
                 </p>
             </div>
 
-            <!-- Contact -->
             <div>
                 <h3 class="text-white font-semibold mb-4">Contacto Rápido</h3>
                 <ul class="space-y-3 text-sm">
@@ -307,7 +346,6 @@
                 </ul>
             </div>
 
-            <!-- Operating Hours -->
             <div>
                 <h3 class="text-white font-semibold mb-4">Horario de Atención</h3>
                 <ul class="space-y-2 text-sm text-gray-400">
@@ -335,7 +373,6 @@
         </div>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
     </script>
