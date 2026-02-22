@@ -97,6 +97,17 @@
                     Ver en Maps
                 </a>
             </div>
+
+            <!-- New WhatsApp Reminder / Note -->
+            <div class="mt-8 bg-black/40 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-2xl w-full flex items-start sm:items-center gap-3 text-left">
+                <div class="bg-accent-500/20 p-2 rounded-full flex-shrink-0 mt-0.5 sm:mt-0">
+                    <i data-lucide="info" class="w-5 h-5 text-accent-500"></i>
+                </div>
+                <p class="text-sm sm:text-base text-gray-200">
+                    Para agilizar tu atención por WhatsApp, por favor incluye: el <strong>Problema</strong> y los datos de tu Vehículo (<strong>Marca</strong>, <strong>Modelo</strong> y <strong>Año</strong>).
+                </p>
+            </div>
+
             <a href="#servicios" class="mt-8 text-brand-100 hover:text-white transition-colors flex items-center gap-1 font-medium">
                 Ver más servicios
                 <i data-lucide="chevron-down" class="w-4 h-4"></i>
@@ -235,10 +246,18 @@
 
     <!-- Call to Action Banner -->
     <section class="bg-brand-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
             <h2 class="text-3xl font-bold mb-4">¿Te quedaste afuera o el auto no arranca?</h2>
-            <p class="text-brand-100 mb-8 max-w-2xl mx-auto">Llegamos rápido al lugar con las herramientas necesarias para solucionar tu problema sin dañar tu vehículo.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <p class="text-brand-100 mb-6 max-w-2xl mx-auto">Llegamos rápido al lugar con las herramientas necesarias para solucionar tu problema sin dañar tu vehículo.</p>
+            
+            <!-- Secondary Reminder in lower CTA -->
+            <div class="bg-brand-900/50 rounded-lg px-4 py-3 mb-8 inline-block border border-brand-700">
+                <p class="text-sm sm:text-base text-brand-50">
+                    <span class="text-accent-500 font-bold mr-1">¡Importante!</span> Al contactarnos, envíanos: <strong>Problema</strong> y datos de tu <strong>Vehículo</strong> (Marca, Modelo y Año).
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
                 <a href="tel:+5493815052648" class="flex justify-center items-center gap-2 bg-white text-brand-900 px-6 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors">
                     <i data-lucide="phone" class="w-5 h-5"></i>
                     (381) 505-2648
