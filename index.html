@@ -55,11 +55,11 @@
     <!-- Header / Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <i data-lucide="key-round" class="text-brand-600 w-8 h-8"></i>
-                <span class="text-2xl font-bold text-gray-900 tracking-tight">Tecno<span class="text-brand-600">Key</span></span>
-            </div>
+            <!-- Updated Custom Logo -->
+            <a class="font-bold flex items-center text-xl sm:text-2xl" href="index.html">
+                <img src="favicon.ico" alt="Tecnokey Logo" class="m-1" style="height: 32px; width: 32px;" onerror="this.style.display='none'">
+                <span style="color: #4586A4;">Tecno</span><span style="color: #809A50;">k</span><span style="color: #CB2C52;">ey</span>
+            </a>
             
             <!-- Mobile/Desktop CTA -->
             <a href="https://wa.me/5493815052648" target="_blank" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold transition-colors text-sm md:text-base">
@@ -81,12 +81,12 @@
                 Especialistas en <br class="hidden sm:block"/> <span class="text-accent-500">Cerrajería Automotriz</span>
             </h1>
             <p class="text-lg sm:text-xl text-gray-200 max-w-2xl mb-8">
-                ¿Llaves perdidas? ¿Vehiculo bloqueado? Resolvemos emergencias y fallas electrónicas de tu vehículo o motocicleta.
+                ¿Llaves perdidas? ¿Vehículo bloqueado? Resolvemos emergencias y fallas electrónicas de tu vehículo o motocicleta de inmediato.
             </p>
             <div class="flex flex-col w-full sm:w-auto sm:flex-row gap-4">
                 <a href="tel:+5493815052648" class="w-full sm:w-auto flex justify-center items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-transform transform hover:scale-105 shadow-lg">
                     <i data-lucide="phone-call" class="w-6 h-6"></i>
-                    Llamar
+                    Llamar ahora
                 </a>
                 <a href="#servicios" class="w-full sm:w-auto flex justify-center items-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors border border-white/30">
                     Ver Servicios
@@ -105,7 +105,7 @@
                 <div>
                     <h2 class="text-2xl md:text-3xl font-bold mb-2">Más que una cerrajería: Expertos Electromecánicos</h2>
                     <p class="text-lg text-accent-50 font-medium">
-                        Nos destacamos por nuestro diagnóstico y reparación avanzada. Diagnosticamos problemas con el inmovilizador, ECU, tablero, airbag, ABS. 
+                        Nos destacamos por nuestro diagnóstico y reparación avanzada. Diagnosticamos problemas con el inmovilizador, ECU, tablero, airbag, ABS. Si tiene un componente electrónico, nosotros lo diagnosticamos.
                     </p>
                 </div>
             </div>
@@ -117,7 +117,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestros Servicios</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Atención exclusiva para autos, camionetas, camiones y motocicletas. (No brindamos servicios para el hogar).</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Atención exclusiva para autos, camionetas, camiones y motocicletas</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -161,7 +161,7 @@
                     <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center mb-4">
                         <i data-lucide="key" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Llaves y Mandos a distancia</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Llaves y Mandos</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
@@ -182,6 +182,7 @@
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
                             Venta y cambio de carcasas
+                        </li>
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
                             Cerrajería para Motocicletas
@@ -210,11 +211,11 @@
                         </li>
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
-                            Hermanado de llaves
+                            Hermanado de llaves (Rekey)
                         </li>
                         <li class="flex items-start gap-2 text-gray-600">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
-                            Cambio y reparacion de contactor
+                            Cambio y reparación de contactor
                         </li>
                     </ul>
                 </div>
@@ -244,11 +245,13 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Brand Info -->
+            <!-- Updated Brand Info with new Logo -->
             <div>
                 <div class="flex items-center gap-2 mb-4">
-                    <i data-lucide="key-round" class="text-brand-500 w-6 h-6"></i>
-                    <span class="text-xl font-bold text-white tracking-tight">Tecno<span class="text-brand-500">Key</span></span>
+                    <img src="favicon.ico" alt="Tecnokey Logo" style="height: 24px; width: 24px;" onerror="this.style.display='none'">
+                    <span class="text-xl font-bold tracking-tight">
+                        <span style="color: #4586A4;">Tecno</span><span style="color: #809A50;">k</span><span style="color: #CB2C52;">ey</span>
+                    </span>
                 </div>
                 <p class="text-sm text-gray-400 mb-4">
                     Expertos en cerrajería automotriz y diagnóstico electromecánico avanzado. Tu vehículo en las mejores manos.
@@ -269,7 +272,7 @@
                     </li>
                     <li class="flex items-start gap-2">
                         <i data-lucide="map-pin" class="w-4 h-4 text-brand-500 mt-1"></i>
-                        <span>Corrientes 1253<br>San Migel de Tucumán, Tucumán</span>
+                        <span>Corrientes 1253<br>San Miguel de Tucumán, Tucumán</span>
                     </li>
                 </ul>
             </div>
@@ -280,8 +283,10 @@
                 <ul class="space-y-2 text-sm text-gray-400">
                     <li class="flex justify-between">
                         <span>Lunes - Viernes:</span>
-                        <span>9:00 - 12:30</span>
-                        <span>15:30 - 20:00</span>
+                        <div class="text-right">
+                            <span>9:00 - 12:30</span><br>
+                            <span>15:30 - 20:00</span>
+                        </div>
                     </li>
                     <li class="flex justify-between">
                         <span>Sábados:</span>
